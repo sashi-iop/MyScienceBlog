@@ -7,7 +7,7 @@
     <lastBuildDate>2025-08-14T16:12:49Z</lastBuildDate>
     <pubDate>2025-08-14T16:12:49Z</pubDate>
     <ttl>1800</ttl>
-    <item><title>Introduction to High Energy Physics</title><link>https://USERNAME.github.io/REPO/posts/intro-high-energy-physics.html</link><pubDate>2025-08-10T10:00:00Z</pubDate><description>What is high-energy physics, why accelerators matter, and a simple tour of particles and interactions.</description></item>
+    <item><title>Introduction to High Energy Physics</title><link>https://sashi-iop.github.io/REPO/posts/intro-high-energy-physics.html</link><pubDate>2025-08-10T10:00:00Z</pubDate><description>What is high-energy physics, why accelerators matter, and a simple tour of particles and interactions.</description></item>
     <item><title>Kolmogorov–Smirnov Test: A Gentle Guide</title><link>https://USERNAME.github.io/REPO/posts/ks-test-gentle-guide.html</link><pubDate>2025-08-11T12:00:00Z</pubDate><description>Intuition-first walkthrough of the K–S test, with use-cases in particle physics and goodness-of-fit.</description></item>
     <item><title>Extended Likelihood for Signal vs Background</title><link>https://USERNAME.github.io/REPO/posts/extended-likelihood-sb.html</link><pubDate>2025-08-12T14:30:00Z</pubDate><description>From counting experiments to continuous distributions—how extended likelihood improves parameter estimation.</description></item>
   </channel>

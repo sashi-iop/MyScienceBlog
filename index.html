@@ -3,29 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <title>My Science Blog</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #111827;
+    }
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .post-list {
+      list-style: none;
+      padding: 0;
+    }
+    .post-list li {
+      background: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    .post-list li:hover {
+      transform: translateY(-3px);
+    }
+    .post-list a {
+      color: #111827;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to My Science Blog</h1>
+    <h1>My Science Blog</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="posts/first-post.html">First Post</a>
+      <a href="posts/first-post.html">Posts</a>
     </nav>
   </header>
 
   <main>
     <h2>Latest Posts</h2>
-    <ul>
+    <ul class="post-list">
       <li><a href="posts/first-post.html">Introduction to High Energy Physics</a></li>
+      <li><a href="#">The Beauty of Quantum Mechanics (Coming Soon)</a></li>
+      <li><a href="#">Exploring the Universe with Particle Accelerators (Coming Soon)</a></li>
     </ul>
   </main>
 
   <footer>
-    <p>© 2025 My Science Blog</p>
+    <p>© 2025 My Science Blog — Built with ❤️ using HTML & GitHub Pages</p>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
 

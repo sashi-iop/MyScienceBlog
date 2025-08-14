@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Introduction to High Energy Physics",
+    "date": "2025-08-10T10:00:00Z",
+    "url": "posts/intro-high-energy-physics.html",
+    "tags": [
+      "HEP",
+      "Physics",
+      "Basics"
+    ],
+    "excerpt": "What is high-energy physics, why accelerators matter, and a simple tour of particles and interactions."
+  },
+  {
+    "title": "Kolmogorov\u2013Smirnov Test: A Gentle Guide",
+    "date": "2025-08-11T12:00:00Z",
+    "url": "posts/ks-test-gentle-guide.html",
+    "tags": [
+      "Statistics",
+      "Data Analysis"
+    ],
+    "excerpt": "Intuition-first walkthrough of the K\u2013S test, with use-cases in particle physics and goodness-of-fit."
+  },
+  {
+    "title": "Extended Likelihood for Signal vs Background",
+    "date": "2025-08-12T14:30:00Z",
+    "url": "posts/extended-likelihood-sb.html",
+    "tags": [
+      "HEP",
+      "Statistics",
+      "Likelihood"
+    ],
+    "excerpt": "From counting experiments to continuous distributions\u2014how extended likelihood improves parameter estimation."
+  }
+]

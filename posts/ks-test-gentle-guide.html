@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Science Blog</title>
-  <meta name="description" content="Physics, statistics, and research powered by technology.">
-  <link rel="icon" href="assets/logo.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Kolmogorov–Smirnov Test: A Gentle Guide — SITE_Kolmogorov–Smirnov Test: A Gentle Guide</title>
+  <link rel="icon" href="../assets/logo.svg">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -18,13 +17,13 @@
 <body>
   <header>
   <div class="container header-inner">
-    <a class="brand" href="index.html">
+    <a class="brand" href="../index.html">
       <img src="assets/logo.svg" alt="logo"/>
       <strong>My Science Blog</strong>
     </a>
     <div class="util">
       <nav>
-        <a href="index.html">Home</a>
+        <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="tags.html">Tags</a>
         <a href="contact.html">Contact</a>
@@ -34,27 +33,22 @@
   </div>
 </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="kicker">Education · Research · Technology</div>
-      <h1>Science that’s clear, rigorous, and hands‑on.</h1>
-      <p>Dive into high‑energy physics, statistics for research, and practical tools that make science accessible.</p>
-      <div class="searchbar">
-        <input id="search" type="search" placeholder="Search posts, e.g. 'likelihood', 'K–S', 'HEP'">
-        <a class="btn" href="about.html">About this project</a>
-      </div>
-    </section>
-    <section>
-      <div id="post-grid" class="grid" aria-live="polite"></div>
-    </section>
+  <main class="container post">
+    <p class="post-meta">August 11, 2025 · <span class="tag">Statistics</span> <span class="tag">Data Analysis</span></p>
+    <h1>Kolmogorov–Smirnov Test: A Gentle Guide</h1>
+    
+<p>The Kolmogorov–Smirnov (K–S) test compares the empirical CDF of data against a reference CDF.
+It is useful for <em>goodness‑of‑fit</em> checks without binning.</p>
+<p>The statistic is $$D = \sup_x | F_n(x) - F(x) |,$$ where \(F_n\) is the empirical CDF and \(F\) the model CDF.</p>
+
+    <p><a class="btn" href="../index.html">← Back to Home</a></p>
   </main>
   <footer>
   <div class="container">
-    <div>© 2025 My Science Blog. <a href="feed.xml">RSS</a> • <a href="sitemap.xml">Sitemap</a></div>
+    <div>© 2025 My Science Blog. <a href="../feed.xml">RSS</a> • <a href="../sitemap.xml">Sitemap</a></div>
   </div>
 </footer>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 
-  <script src="js/search.js"></script>
 </body>
 </html>

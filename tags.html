@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags — My Science Blog</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    async function init(){
+      const res = await fetch('/posts/posts.json').catch(()=>fetch('posts/posts.json'));
+      const posts = await res.json();
+      const byTag = new Map();
+      posts.forEach(p=> (p.tags||[]).forEach(t=> {
+        if(!byTag.has(t)) byTag.set(t,[]);
+        byTag.get(t).push(p);
+      }));
+      const wrap = document.getElementById('tags-wrap');
+      Array.from(byTag.keys()).sort().forEach(tag=>{
+        const section = document.createElement('section');
+        section.className='card';
+        section.innerHTML = '<h3>#'+tag+'</h3>';
+        const ul = document.createElement('ul');
+        byTag.get(tag).sort((a,b)=>new Date(b.date)-new Date(a.date)).forEach(p=>{
+          const li = document.createElement('li');
+          li.innerHTML = '<a href="'+p.url+'">'+p.title+'</a> <span class="post-meta">— '+new Date(p.date).toLocaleDateString()+'</span>';
+          ul.appendChild(li);
+        });
+        section.appendChild(ul);
+        wrap.appendChild(section);
+      });
+    }
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</head>
+<body>
+  <header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="logo"/>
+      <strong>My Science Blog</strong>
+    </a>
+    <div class="util">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tags.html">Tags</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="mode-toggle" class="toggle">☾</button>
+    </div>
+  </div>
+</header>
+
+  <main class="container">
+    <h1>Tags</h1>
+    <div id="tags-wrap" class="grid"></div>
+  </main>
+  <footer>
+  <div class="container">
+    <div>© 2025 My Science Blog. <a href="feed.xml">RSS</a> • <a href="sitemap.xml">Sitemap</a></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>

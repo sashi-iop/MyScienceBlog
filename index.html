@@ -5,56 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Science Blog</title>
   <meta name="description" content="Physics, statistics, and research powered by technology.">
-  <link rel="icon" href="assets/logo.svg">
+  <meta name="keywords" content="science, physics, statistics, research, technology, blog">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://example.org/">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('pre code').forEach(el=>hljs.highlightElement(el));});</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+    });
+  </script>
 </head>
 <body>
   <header>
-  <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <img src="assets/logo.svg" alt="logo"/>
-      <strong>My Science Blog</strong>
-    </a>
-    <div class="util">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="tags.html">Tags</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button id="mode-toggle" class="toggle">☾</button>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/logo.svg" alt="My Science Blog logo" width="40" height="40"/>
+        <strong>My Science Blog</strong>
+      </a>
+      <div class="util">
+        <nav aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="tags.html">Tags</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="mode-toggle" class="toggle" aria-label="Toggle dark mode">☾</button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero" aria-labelledby="main-title">
       <div class="kicker">Education · Research · Technology</div>
-      <h1>Science that’s clear, rigorous, and hands‑on.</h1>
+      <h1 id="main-title">Science that’s clear, rigorous, and hands‑on.</h1>
       <p>Dive into high‑energy physics, statistics for research, and practical tools that make science accessible.</p>
       <div class="searchbar">
-        <input id="search" type="search" placeholder="Search posts, e.g. 'likelihood', 'K–S', 'HEP'">
+        <label for="search" class="visually-hidden">Search posts</label>
+        <input id="search" type="search" placeholder="Search posts, e.g. 'likelihood', 'K–S', 'HEP'" autocomplete="off">
         <a class="btn" href="about.html">About this project</a>
       </div>
     </section>
-    <section>
+    <section aria-label="Recent Posts">
       <div id="post-grid" class="grid" aria-live="polite"></div>
     </section>
   </main>
-  <footer>
-  <div class="container">
-    <div>© 2025 My Science Blog. <a href="feed.xml">RSS</a> • <a href="sitemap.xml">Sitemap</a></div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
 
+  <footer>
+    <div class="container">
+      <div>
+        © 2025 My Science Blog.
+        <a href="feed.xml">RSS</a> •
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
   <script src="js/search.js"></script>
 </body>
 </html>

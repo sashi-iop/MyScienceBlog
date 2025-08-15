@@ -1,8 +1,15 @@
 {{ define "main" }}
-<h1>Posts tagged with "{{ .Title }}"</h1>
-<ul>
-  {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<section>
+  <h1>Posts tagged with "{{ .Title }}"</h1>
+  {{ if .Pages }}
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p>No posts found for this tag.</p>
   {{ end }}
-</ul>
+</section>
 {{ end }}
+
